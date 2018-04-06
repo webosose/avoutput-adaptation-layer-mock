@@ -23,7 +23,7 @@ avoutput-adaptation-layer-mock:
 * gcc 4.6.3
 * make (any version)
 * pmloglib
-* webos-pro/avoutput-adaptation-layer-api
+* webosose/avoutput-adaptation-layer-api
 
 
 ## Building
@@ -41,11 +41,11 @@ The directory under which the files are installed defaults to `/usr/local/webos`
 You can install them elsewhere by supplying a value for `WEBOS_INSTALL_ROOT`
 when invoking `cmake`. For example:
 
-    $ cmake -D WEBOS_INSTALL_ROOT:PATH=$HOME/projects/webos-pro ..
+    $ cmake -D WEBOS_INSTALL_ROOT:PATH=$HOME/projects/webosose ..
     $ make
     $ make install
 
-will install the files in subdirectories of `$HOME/projects/webos-pro`.
+will install the files in subdirectories of `$HOME/projects/webosose`.
 
 Specifying `WEBOS_INSTALL_ROOT` also causes `pkg-config` to look in that tree
 first before searching the standard locations. You can specify additional
@@ -75,10 +75,12 @@ You will need to use `sudo` if you did not specify `WEBOS_INSTALL_ROOT`.
 Unless otherwise specified, all content, including all source code files and
 documentation files in this repository are:
 
-Copyright (c) 2017 LG Electronics, Inc.
+Copyright (c) 2017-2018 LG Electronics, Inc.
 
-Confidential computer software. Valid license from LG required for
-possession, use or copying. Consistent with FAR 12.211 and 12.212,
-Commercial Computer Software, Computer Software Documentation, and
-Technical Data for Commercial Items are licensed to the U.S. Government
-under vendor's standard commercial license.
+All content, including all source code files and documentation files in this repository except otherwise noted are: Licensed under the Apache License, Version 2.0 (the "License"); you may not use this content except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+SPDX-License-Identifier: Apache-2.0
